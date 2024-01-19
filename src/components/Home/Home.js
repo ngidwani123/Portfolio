@@ -4,7 +4,8 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-
+import neil from "../../Assets/Projects/neil.jpeg";
+import Tilt from "react-parallax-tilt";
 function Home() {
   return (
     <section>
@@ -22,21 +23,17 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> NEIL GIDWANI</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Col md={4} className="myAvtar">
+              <Tilt>
+                <img src={neil} className="img-fluid interactable" alt="avatar" />
+              </Tilt>
             </Col>
           </Row>
         </Container>
